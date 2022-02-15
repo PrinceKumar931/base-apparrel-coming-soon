@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="shortcut icon"
+      href="/images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="/javaScript/index.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img id="logo" src="images/logo.svg" alt="logo" />
+      </header>
+
+      <img id="hero-mobile" src="images/hero-mobile.jpg" alt="hero-mobile" />
+
+      <div class="content">
+        <h1><span id="we-re">WE'RE</span> COMING SOON</h1>
+        <p id="para-text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+
+        <form name="form" action="#">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email Address"
+            required
+          />
+          <img class="eIcon" src="images/icon-error.svg" alt="error-icon" />
+          <button
+            type="submit"
+            name="submit"
+            value="Submit"
+            onclick="ValidateEmail(document.form.email)"
+          >
+            <img id="arrow-icon" src="images/icon-arrow.svg" alt="icon-arrow" />
+          </button>
+        </form>
+        <p class="alert"></p>
+      </div>
+    </main>
+    <img id="hero-desktop" src="images/hero-desktop.jpg" alt="hero-desktop" />
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/brago87">Prince Kumar</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
